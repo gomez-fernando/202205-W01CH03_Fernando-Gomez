@@ -17,38 +17,58 @@
             <header class="header">
                 <script>
                     function showMenu1() {
-                        // alert("dfdf")
-                      const m = document.querySelector("#menu1");
-                      m.classList.toggle("_visible");
-                        console.log(m)
-                    };
-              
-                    function showAlert() {
-                      alert("onclick Event detected!");
+                        const m = document.querySelector("#menu1");
+                        const m2 = document.querySelector("#menu2");
+                        const arrow = document.querySelector("#arrow1");
+                        const arrow2 = document.querySelector("#arrow2");
+                        m.classList.toggle("_visible");
+                        arrow.classList.toggle("rotated");
+                        arrow2.classList.remove("rotated");
+                        m2.classList.remove("_visible2");
                     }
-                  </script>
 
+                    function showMenu2() {
+                        const m = document.querySelector("#menu2");
+                        const m1 = document.querySelector("#menu1");
+                        const arrow = document.querySelector("#arrow2");
+                        const arrow2 = document.querySelector("#arrow1");
+                        m.classList.toggle("_visible2");
+                        arrow.classList.toggle("rotated");
+                        arrow2.classList.remove("rotated");
+                        m1.classList.remove("_visible");
+                    }
+                </script>
 
                 <nav class="header__nav">
                     <img src="./assets/logo2.png" alt="Pets logo" />
                     <ul class="header__nav_ul">
                         <li>Home</li>
-                        <li onclick="showMenu1();">Live Demo <img src="./assets/t-icon.png" alt="arrow"> </li>
+                        <li onclick="showMenu1();">
+                            Live Demo
+                            <img id="arrow1" src="./assets/t-icon.png" alt="arrow" />
+                        </li>
                         <li id="menu1">
                             <ul>
-                                <li>...</li>
-                                <li>...</li>
-                                <li>...</li>
-                                <li>...</li>
+                                <li>Pets Boarding Services</li>
+                                <li>Pets Toys and Food Shop</li>
+                                <li>Pets Training School</li>
                             </ul>
                         </li>
-                        <li>Live Demo Blocks <img src="./assets/t-icon.png" alt="arrow"> </li>
+                        <li onclick="showMenu2();">
+                            Live Demo Blocks
+                            <img id="arrow2" src="./assets/t-icon.png" alt="arrow" />
+                        </li>
+                        <li id="menu2">
+                            <ul>
+                                <li>Pets Boarding Services 2</li>
+                                <li>Pets Toys and Food Shop 2</li>
+                                <li>Pets Training School 2</li>
+                            </ul>
+                        </li>
+                        <!-- <li>Live Demo Blocks <img src="./assets/t-icon.png" alt="arrow"> </li> -->
                         <li class="header__nav_ul--button">BUY NOW</li>
                     </ul>
                 </nav>
-
-                
-                
             </header>
 
             <main class="main">
@@ -58,23 +78,21 @@
                         <h2>Take a closer look</h2>
                     </div>
                     <div>
-                        <button class="titles__button">
-                            VIEW ALL
-                        </button>
+                        <button class="titles__button">VIEW ALL</button>
                     </div>
                 </div>
                 <div class="images">
                     <div class="images__picture">
-                        <img src="./assets/01.jpg" alt="Perrito jugando">
-                        <p>ACTIVITIES<br/>Toys Playtime</p>
+                        <img src="./assets/01.jpg" alt="Perrito jugando" />
+                        <p>ACTIVITIES<br />Toys Playtime</p>
                     </div>
                     <div class="images__picture">
-                        <img src="./assets/02.jpg" alt="Perrito jugando">
-                        <p>ACTIVITIES<br/>Active Rest</p>
+                        <img src="./assets/02.jpg" alt="Perrito jugando" />
+                        <p>ACTIVITIES<br />Active Rest</p>
                     </div>
                     <div class="images__picture">
-                        <img src="./assets/03.jpg" alt="Perrito jugando">
-                        <p>ACTIVITIES<br/>Game Walks</p>
+                        <img src="./assets/03.jpg" alt="Perrito jugando" />
+                        <p>ACTIVITIES<br />Game Walks</p>
                     </div>
                 </div>
             </main>
