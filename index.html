@@ -15,15 +15,39 @@
     <body>
         <div class="container">
             <header class="header">
+                <script>
+                    function showMenu1() {
+                        // alert("dfdf")
+                      const m = document.querySelector("#menu1");
+                      m.classList.toggle("_visible");
+                        console.log(m)
+                    };
+              
+                    function showAlert() {
+                      alert("onclick Event detected!");
+                    }
+                  </script>
+
+
                 <nav class="header__nav">
                     <img src="./assets/logo2.png" alt="Pets logo" />
                     <ul class="header__nav_ul">
                         <li>Home</li>
-                        <li>Live Demo <img src="./assets/t-icon.png" alt="arrow"> </li>
+                        <li onclick="showMenu1();">Live Demo <img src="./assets/t-icon.png" alt="arrow"> </li>
+                        <li id="menu1">
+                            <ul>
+                                <li>...</li>
+                                <li>...</li>
+                                <li>...</li>
+                                <li>...</li>
+                            </ul>
+                        </li>
                         <li>Live Demo Blocks <img src="./assets/t-icon.png" alt="arrow"> </li>
                         <li class="header__nav_ul--button">BUY NOW</li>
                     </ul>
                 </nav>
+
+                
                 
             </header>
 
@@ -40,20 +64,17 @@
                     </div>
                 </div>
                 <div class="images">
-                    <div>
-                        <!-- <picture class="images__picture"> -->
-                            <img src="./assets/01.jpg" alt="Perrito jugando">
-                        <!-- </picture> -->
+                    <div class="images__picture">
+                        <img src="./assets/01.jpg" alt="Perrito jugando">
+                        <p>ACTIVITIES<br/>Toys Playtime</p>
                     </div>
-                    <div>
-                        <!-- <picture class="images__picture"> -->
-                            <img src="./assets/02.jpg" alt="Gato asustado">
-                        <!-- </picture> -->
+                    <div class="images__picture">
+                        <img src="./assets/02.jpg" alt="Perrito jugando">
+                        <p>ACTIVITIES<br/>Active Rest</p>
                     </div>
-                    <div>
-                        <!-- <picture class="images__picture"> -->
-                            <img src="./assets/03.jpg" alt="Perro en el campo">
-                        <!-- </picture> -->
+                    <div class="images__picture">
+                        <img src="./assets/03.jpg" alt="Perrito jugando">
+                        <p>ACTIVITIES<br/>Game Walks</p>
                     </div>
                 </div>
             </main>
