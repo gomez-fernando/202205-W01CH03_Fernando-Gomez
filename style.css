@@ -58,6 +58,7 @@ body{
 .header__nav_ul>li>img{
     width: 10px;
     margin: 0 0 3px 0;
+    transition: all 0.5s ease;
 }
 .main{
     padding:60px;
@@ -140,14 +141,38 @@ body{
     background-color: rgba(0,0,0,0.3);
     transition: all 0.5s ease;
 }
-#menu1{
+#menu1, #menu2{
     display: none;
+    padding: 0;
+    margin-top: 2.8rem;
+    background: white;
 }
+#menu1 ul, #menu2 ul{
+    list-style: none;
+    padding: 0;
+}
+#menu1 ul li:hover, #menu2 ul li:hover{
+    color: var(--primary);
+    border-bottom: none;
+} 
 ._visible{
     display: block !important;
     z-index: 1;
     position: absolute;
-    position: absolute;
     top: 20px;
     left: 8rem;
 }
+._visible2{
+    display: block !important;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    left: 20rem;
+}
+.header__nav_ul li:nth-child(1):hover, .header__nav_ul li:nth-child(2):hover, .header__nav_ul li:nth-child(4):hover{
+    border-bottom: 3px solid var(--primary);
+}
+.rotated{
+    transform: rotate(180deg);
+    transition: all 0.5s ease;
+  }
