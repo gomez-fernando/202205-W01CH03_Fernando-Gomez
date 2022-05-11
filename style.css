@@ -49,6 +49,11 @@ body{
     padding: 10px 20px 10px 20px !important;
     border-radius: 0 30px 30px 30px;
 }
+.header__nav_ul--button:hover{
+    background-color: var(--primary);
+    color: white;
+    transition: all 0.5s ease;
+}
 .header__nav_ul>li>img{
     width: 10px;
     margin: 0 0 3px 0;
@@ -83,4 +88,28 @@ body{
     padding: 10px 20px 10px 20px !important;
     border-radius: 0 30px 30px 30px;
     padding: 20px 30px 20px 30px !important;
+}
+.titles__button:hover{
+    background: white;
+    color: var(--primary);
+    border: 3px solid var(--primary);
+    transition: all 0.5s ease;
+}
+.images{
+    display:flex;
+    justify-content: space-between;
+}
+.images div{
+    width: 30%;
+
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 28px;
+}
+.images div img{
+    /* max-width: 100%; */
+    clip-path: inset(0px 60px 0px 60px);
+
+    max-width: 133%;
 }
