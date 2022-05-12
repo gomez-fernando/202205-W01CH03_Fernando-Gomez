@@ -201,6 +201,10 @@ body{
     .images div {
         width: 55%;
     }
+    .images>div p {
+        font-size: 3.4rem;
+        line-height: 5.5rem;
+    }
 }
 @media (max-width: 1070px) {
     .header__nav_ul{
@@ -215,6 +219,10 @@ body{
     .titles h2 {
     font-size: 3.5rem;
     margin-bottom: 20px;
+    }
+    .images>div p {
+        font-size: 1.4rem;
+        line-height: 4.5rem;
     }
 }
 @media (max-width: 596px) {
